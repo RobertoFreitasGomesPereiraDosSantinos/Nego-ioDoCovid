@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        #conteiner {
+            width: 100vw;
+            height: 350px;
+            background-color: #0abde3;
+        }
+        #prim {
+            margin-top: 65px;
+        }
+        button {
+            background-color: #0abde3;
+            color: white;
+            border-color: white;
+            width: 250px;
+            border-radius: 50px;
+            height: 30px;
+        }
+        button:hover{
+            background-color: #024553;
+            color: rgb(255, 255, 255);
+        }
+        .inneu {
+            display: none;
+        }
+        .inner {
+            background-color: #34495e;
+            color: white;
+            height: 40px;
+            width: 270px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+    <title>Atividade03</title>
+</head>
+<body>
+    <div id="conteiner">
+        <center>
+            <h3>Qual a sua orientação de COVID-19</h3>
+            <h3>Qual o seu caso?</h3>
+            <button type="button" id="prim" onclick="bt01()">idoso</button>
+            <br>
+            <button type="button" onclick="bt02()">sofre de problemas respiratórios</button>
+            <br>
+            <button type="button" onclick="bt03()">é diabético</button>
+            <br>
+            <button type="button" onclick="bt04()">saudável</button>
+            <br>
+            <div class="inneu" id="quadro"></div>
+        </center>
+    </div>
+    <script src="escripito.js"> 
+        // assim seria sem o switch case. Obrigado por nos fazer sofrer :)
+
+        // function bt01() {
+        //     let div = document.getElementById("quadro");
+        //     div.classList.remove("inneu");
+        //     div.classList.add("inner");
+        //     document.getElementById("quadro").innerHTML = "tome ômega 3, regina";
+        // }
+        // function bt02() {
+        //     let div = document.getElementById("quadro");
+        //     div.classList.remove("inneu");
+        //     div.classList.add("inner");
+        //     document.getElementById("quadro").innerHTML = "como assim? Tem tanto ar  no mundo";
+        // }
+        // function bt03() {
+        //     let div = document.getElementById("quadro");
+        //     div.classList.remove("inneu");
+        //     div.classList.add("inner");
+        //     document.getElementById("quadro").innerHTML = "taca sal na lingua";
+        // }
+        // function bt04() {
+        //     let div = document.getElementById("quadro");
+        //     div.classList.remove("inneu");
+        //     div.classList.add("inner");
+        //     document.getElementById("quadro").innerHTML = "espero que você morra =)";
+        // }
+    </script>
+</body>
+</html>
